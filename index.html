@@ -15,9 +15,23 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    </header>
+    <picture>
+      <!--Resolution assignment-->
+      <source srcset="images/museum1200_x_1200.jpg,
+      images/museum1200_x_1200.jpg, 1.5x,
+      images/museum1200_x_1200.jpg, 2x,"
+      media="(Min-width:900px)">
 
-  </header>
+      <source srcset="images/museum640_x_360.jpg,
+     images/museum640_x_360.jpg, 1.5x,
+      images/museum640_x_360.jpg, 2x,"
+      media="(Min-width:320px)">
+      
+      <img src="images/museum1200_x_1200.jpg" alt="image of a dog in bed">
+  </picture>
+
+
 </body>
 
 </html>
